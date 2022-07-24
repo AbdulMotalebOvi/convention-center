@@ -15,9 +15,7 @@ a {
 }
 
 /* navbar */
-nav .navbar {
-    position: fixed;
-}
+
 
 .navbar-collapse {
     flex-grow: 0;
@@ -302,6 +300,11 @@ footer {
 @media only screen and (max-width: 576px) {
     .carousel-desc {
         width: 100%;
+        font-size: 14px;
+    }
+
+    .carousle-title {
+        font-size: 28px;
     }
 
     /* pricing */
