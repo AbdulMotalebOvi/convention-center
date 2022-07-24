@@ -15,6 +15,10 @@ a {
 }
 
 /* navbar */
+nav .navbar {
+    position: fixed;
+}
+
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -32,19 +36,22 @@ a {
 }
 
 /* carousel area start */
-.carousel-caption h2 {
+.carousle-title {
     font-weight: 600;
     font-size: 48px;
+    margin-bottom: 10px;
 }
 
-.carousel-btn {
-    width: 165px;
-    height: 44px;
-    padding: 10px;
+.carousel-caption {
+    margin-top: 10px;
 }
 
+.carousel-item img {
+    height: 80vh;
+    object-fit: cover;
+}
 
-.carousel-caption p {
+.carousel-desc {
     font-weight: 300;
     font-size: 16px;
     width: 51%;
@@ -278,7 +285,6 @@ footer {
 }
 
 
-
 .icons {
     position: relative;
     top: -13px;
@@ -292,3 +298,52 @@ footer {
 }
 
 /* footer end */
+/* media querires */
+@media only screen and (max-width: 576px) {
+    .carousel-desc {
+        width: 100%;
+    }
+
+    /* pricing */
+    .card.card-active {
+        width: 100%;
+        display: block;
+        height: 94%;
+        margin-bottom: 38px;
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: 2px 2px 8px grey;
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .icon {
+        margin: 0 auto;
+    }
+
+    .row.mt-5.d-flex {
+        flex-direction: column-reverse;
+    }
+
+    .icon-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon h4 {
+        text-align: center;
+    }
+}
+
+/* tablet view */
+@media only screen and (max-width: 992px) {
+    .faq-img {
+        margin-top: 99px;
+    }
+}
